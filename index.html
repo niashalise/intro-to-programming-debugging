@@ -10,21 +10,27 @@
   <body>
     <main>
       <h1>Guessing Game</h1>
+      <!--Prompt for user-->
       <p>
         I'm thinking of a number from 1 to 99! Can you guess it in 5 tries or
         less?
       </p>
       <div>
+        <!--Input options from 1-99-->
         <input type="number" id="guess" min="1" max="99" />
         <button id="submit">Submit Guess</button>
       </div>
       <div>
+        <!--Response based on user input-->
+        <!--All of these responses display on the page versus being hidden until the user guesses-->
         <p class="message" id="number-of-guesses"></p>
         <p class="message" id="too-high">You guessed too high. Try again.</p>
         <p class="message" id="too-low">You guessed too low. Try again.</p>
+        <!--Too many guesses from user-->
         <p class="message" id="max-guesses">
           You reached the max number of guesses
         </p>
+        <!--User identified correctly-->
         <p class="message" id="correct">
           Congratulations, You guessed correctly! <br />
           Would you like to play again?
